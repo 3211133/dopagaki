@@ -1,0 +1,13 @@
+{
+  "manifest_version": 3,
+  "name": "X Fullscreen Video Playlist v0.3",
+  "version": "0.3.0",
+  "description": "X(Twitter)のTL/リスト上の動画を全画面で連続再生する",
+  "content_scripts": [
+    {
+      "matches": ["https://x.com/*", "https://twitter.com/*"],
+      "js": ["content.js"],
+      "run_at": "document_idle"
+    }
+  ]
+}
